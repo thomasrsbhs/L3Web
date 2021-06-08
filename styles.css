@@ -1,0 +1,712 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Sparkle.ttf);
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(58, 6, 9) 100%);
+    background-size: 100vw 100vh;
+
+    background-repeat: round;
+
+}
+
+/*logo and shoppiong kart holder */
+
+nav {
+    border-bottom: 3px solid red;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    align-content: center;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*a link placements */
+
+.navLinks {
+    grid-column: 2/3;
+    margin: 5px;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+
+}
+
+nav a {
+    /*    padding: 10px;*/
+    font-size: 1.45vw;
+    color: red;
+    font-family: 'Century Gothic';
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+nav a:hover {
+    color: rgb(155, 156, 152);
+}
+
+footer a {
+
+    font-size: 17px;
+    color: white;
+    font-family: 'Century Gothic';
+    text-decoration: none;
+
+
+}
+
+footer a:hover {
+    color: yellow;
+
+}
+
+/*nav link hover colour and affect*/
+
+.kartLogo:hover {
+    box-shadow: 0px 0px 50px 15px rgb(206, 14, 14);
+
+}
+
+/*Cart logo hover effect*/
+
+/*linear-gradient(180deg, rgb(24, 3, 3), rgb(102, 12, 15) 100%)*/
+
+
+/*      Home.html       */
+
+
+/*Fonts & text styles*/
+
+h1 {
+    color: white;
+    /*    font-size: 22.5px;*/
+    font-size: 1.4vw;
+    font-family: 'Century Gothic';
+}
+
+h2 {
+    color: white;
+    /*    font-size: 26px;*/
+    font-size: 1.7vw;
+
+    font-family: 'Century Gothic';
+}
+
+h3 {
+    color: white;
+    font-size: 17px;
+    font-family: 'Century Gothic';
+    align-self: center;
+    margin: 20px 0px;
+}
+
+h4 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Century Gothic';
+}
+
+/*Text for footer/FAQ*/
+footer,
+p {
+    color: white;
+    font-size: 17px;
+    font-family: 'Century Gothic';
+
+}
+
+
+/*Bedlam logo in Nav*/
+
+.logo {
+    width: 40%;
+    justify-self: center;
+    /*
+    height: 11%;
+    display: grid;
+    padding-left: 15px;
+*/
+}
+
+
+.kartLogo {
+    place-self: center;
+    text-align: center;
+    width: 8%;
+}
+
+.kartLogo img {
+    width: 100%;
+
+}
+
+/*box content 
+*/
+
+/*Home section & bgrid alignments*/
+section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+
+    height: 50vh;
+    width: 48vw;
+
+    margin: 5% auto;
+
+    place-items: stretch;
+    background: linear-gradient(180deg, rgb(24, 3, 3), rgb(102, 12, 15) 100%);
+    text-align: center;
+}
+
+/*Home section content alignments*/
+
+.BoxLeft {
+    grid-column: 1/2;
+    border-right: 5px groove white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px;
+
+}
+
+.hat {
+    width: 20vw;
+    height: 40vh;
+    margin: 10%;
+}
+
+/*section right*/
+
+.BoxRight {
+    grid-column: 2/2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*    bottom bar with additional info*/
+
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+
+
+    margin: 20px 0px;
+
+
+}
+
+
+/*Bottom bar/FAQ alignments and grids*/
+
+.subleft {
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 5px;
+
+    justify-self: end;
+    text-align: center;
+
+
+
+
+
+
+}
+
+.submid {
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 5px;
+
+    text-align: center;
+
+    justify-self: center;
+
+}
+
+/*
+.info {
+   
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-right: 5px;
+
+    text-align: center;
+    justify-self: center;
+}
+*/
+
+.subright {
+
+    grid-column: 3/3;
+    grid-row: 1/2;
+    padding-left: 12px;
+    margin: 10px;
+
+
+    justify-self: start;
+    text-align: center;
+
+
+}
+
+.cr {
+    color: red;
+    align-self: end;
+    text-align: center;
+}
+
+html {
+    height: 100vh;
+}
+
+
+
+
+/*          about.html css          */
+/*          about page styles       */
+
+
+
+
+.section2 {
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
+    grid-template-rows: auto;
+    display: grid;
+
+    height: 100%;
+    width: 60vw;
+    padding-bottom: 20px;
+
+
+
+    margin: 5% auto;
+    grid-row-gap: 6vh;
+    place-items: stretch;
+    background: linear-gradient(180deg, rgb(24, 3, 3), rgb(102, 12, 15) 100%);
+    text-align: center;
+}
+
+.bottomleft {
+
+
+    display: grid;
+
+    justify-self: center;
+
+}
+
+
+/*About section content*/
+
+
+.boxTop {
+    grid-column: 3/5;
+    grid-row: auto;
+}
+
+.boxMid2 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    display: grid;
+
+    /*    background: linear-gradient(0deg, rgb(24, 3, 3), rgb(102, 12, 15) 100%);*/
+
+    justify-self: start;
+    align-self: center;
+    /*    border-bottom: 2px solid white;*/
+
+
+
+}
+
+
+.boxMid2 h1 {
+    justify-self: center;
+    font-size: 1.4vw;
+    /*    border-bottom: 2px solid white;*/
+}
+
+.boxText {
+
+    grid-column: 2/6;
+    grid-row: 3/4;
+    display: grid;
+    justify-self: start;
+    align-self: center;
+}
+
+.boxText h1 {
+
+    /*    border-bottom: 2px solid white;*/
+    font-size: 1.4vw;
+}
+
+.fist {
+    width: 40%;
+    justify-self: center;
+    grid-column: 3/5;
+
+}
+
+.bottomleft {
+    grid-column: 3/5;
+    grid-row: 4/5;
+
+    display: grid;
+
+}
+
+hr {
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    justify-self: center;
+}
+
+.section2text {
+    width: 100%;
+}
+
+.footer2 {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+
+
+    padding: 0px;
+
+
+}
+
+/*          shop.html           */
+/*          shop page styles                    */
+
+.underNav {
+    text-align: center;
+    margin-top: 10px;
+    display: grid;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.clickMe {
+    background-color: rgb(206, 14, 14);
+    text-align: center;
+}
+
+.cartInfo {
+    /*    display: block;*/
+    /*    flex-direction: row-reverse;*/
+    margin: 20px;
+    /*    background-color: rgb(206, 14, 14);*/
+    /*    text-align: center;*/
+
+    text-align: center;
+    display: inline-flex;
+    /*    flex-direction: row-reverse;*/
+    place-items: center;
+    color: red;
+}
+
+
+
+/*shop section content and alignments with JS products*/
+.section3 {
+
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 20%;
+    width: 60vw;
+    height: 100%;
+
+
+    margin: 5% auto;
+    grid-row-gap: 6vh;
+    place-items: stretch;
+    background: linear-gradient(180deg, rgb(24, 3, 3), rgb(102, 12, 15) 100%);
+    text-align: center;
+}
+
+
+/*product alignments with JS products*/
+/*         JS products list items styles        */
+
+/*parent/holder of li content*/
+ul {
+    /*    margin-left: 165px;*/
+
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 3%;
+}
+
+/*cart page product styles*/
+
+#cartProducts {
+
+    justify-content: center;
+    grid-column: 1/6;
+    width: 50%;
+
+
+}
+
+
+.footerCart {
+    margin-top: 10%;
+}
+
+/*img, price, desc content holder*/
+li {
+    width: 100%;
+    background-color: black;
+    list-style: none;
+    margin-bottom: 10px;
+
+}
+
+/*hat img in li element*/
+
+li img {
+
+    width: 100%;
+    border: 3px rgb(206, 14, 14);
+    border-style: ridge;
+}
+
+/*li text*/
+
+li h1 {
+    /*    margin: 10px;*/
+    font-size: 15px;
+    text-align: center;
+    justify-self: center;
+}
+
+li h2 {
+    /*    margin: 10px;*/
+    font-size: 18px;
+    text-align: center;
+    justify-self: center;
+}
+
+li input {
+    /*    justify-items: start;*/
+    align-self: start;
+    padding: 0px;
+    margin: 5px;
+    width: 70%;
+}
+
+/* button styles*/
+
+li button:hover {
+    background-color: grey;
+}
+
+li button {
+
+    border: 2px ridge yellow;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+
+
+
+
+
+.jsCart {
+    display: inline-block;
+    color: red;
+    margin: 0px 20px;
+}
+
+#itemCount {
+    text-align: center;
+    display: inline-flex;
+    /*    flex-direction: row-reverse;*/
+    place-items: center;
+    color: red;
+}
+
+.hats {
+    display: grid;
+    justify-content: center;
+    grid-column: 1/6;
+    justify-self: center;
+    margin: 5px auto;
+}
+
+/*displays for smaller mobile screens by minimalising website */
+
+@media only screen and (max-width: 600px) {
+
+    .navLinks {
+        background-color: grey;
+
+    }
+
+    nav a {
+
+        font-size: 5vw;
+        margin: 5px;
+    }
+
+    .logo {
+
+        display: none;
+    }
+
+    .kartLogo {
+        width: 8vw;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+
+    }
+
+    section {
+        font-size: 20px;
+        margin-top: 20%;
+        grid-template-columns: 2fr;
+        height: 100%;
+        width: 58vw;
+
+        margin: 5% auto;
+
+        place-items: stretch;
+        background: linear-gradient(180deg, rgb(24, 3, 3), rgb(102, 12, 15) 100%);
+        text-align: center;
+    }
+    
+    .BoxLeft {
+    grid-column: 1/2;
+/*    border-right: 5px groove white;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px;
+
+}
+.BoxRight {
+    grid-column: 2/2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+    h1 {
+    color: white;
+    font-size: 4vw;
+    font-family: 'Century Gothic';
+}
+
+h2 {
+    color: white;
+    /*    font-size: 26px;*/
+    font-size: 5vw;
+
+    font-family: 'Century Gothic';
+}
+    
+    .boxMid2 h1 {
+        font-size: 3vw;
+    }
+
+    .boxText h1 {
+        font-size: 3vw;
+    }
+    
+    .boxText h4 {
+        font-size: 2vw;
+    }
+
+
+    .section2 {
+        /*        font-size: 25px;*/
+        overflow-y: scroll;
+    }
+
+
+    .section3 {
+        margin-top: 50%;
+        width: 100vw;
+        height: 100%;
+        justify-self: center;
+        align-self: center;
+        overflow: visible;
+
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+        grid-gap: 10px;
+    }
+
+    .underNav {
+        display: none;
+    }
+
+    .jsCart,
+    #itemCount {
+        display: block;
+        flex-direction: column;
+        font-size: 40px;
+/*        display: center;*/
+        text-align: center;
+
+    }
+
+    #cartProducts {
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    }
+
+
+
+    
+    
+    .footer2, .footer3, .footerCart {
+        display: none;
+    }
+
+
+
+
+}
